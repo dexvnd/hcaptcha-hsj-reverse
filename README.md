@@ -1,3 +1,8 @@
+# HSW KEY FETCHER FOR SALE
+If you are looking to buy a HSW key fetcher contact me on [telegram](https://t.me/dexv0) 
+<img width="959" height="273" alt="Code_fStSz0t28qvxc" src="https://github.com/user-attachments/assets/f876520c-1895-42d4-9303-bc7eb37ceb34" />
+
+
 # HSJ ( inspekt_client js ;) ) reverse engineered
 
 this is a project that reverse engineers hcaptcha's hsj.js to get the encryption keys it uses
