@@ -36,7 +36,7 @@ class KeyFetcher:
         ops = [
             ("n_key", "hsj('IiI=.eyJzIjowLCJmIjowLCJjIjowfQ==.')", 0),
             ("response_decrypt_key", "hsj(0, new Uint8Array(1024))", 1),
-            ("payload_encrypt_key", "hsj(1, new Uint8Array(1024))", 2),
+            #("payload_encrypt_key", "hsj(1, new Uint8Array(1024))", 2), not used in hsj, but can be fetched if needed
         ]
 
         for name, code, idx in ops:
