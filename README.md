@@ -38,6 +38,7 @@ dexvstuff
 
 `pip install pycryptodome xxhash msgpack jsbeautifier requests dexvstuff`
 
-## notes
+# Legal Disclaimer
+This repository is intended for educational and research purposes only. The code and content provided here are not affiliated with, endorsed by, or associated with [hCaptcha](https://www.hcaptcha.com) or any related entities.
 
-only use this for research purposes, reverse engineering hcaptcha probably breaks their tos!!!!
+If you are a representative of hCaptcha and believe this repository violates your rights or terms of service, please contact me at [**dexv@dexv.lol**](mailto://dexv@dexv.lol) to request its removal. I will respond promptly to resolve the issue.
