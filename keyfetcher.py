@@ -37,6 +37,7 @@ class KeyFetcher:
         ops = [
             ("n_key", "hsj('IiI=.eyJzIjowLCJmIjowLCJjIjowfQ==.')", 0),
             ("response_decrypt_key", "hsj(0, new Uint8Array(1024))", 1),
+            ("payload_encrypt_key", "hsj(1, new Uint8Array(1024))", 2),
         ]
 
         for name, code, idx in ops:
@@ -49,4 +50,4 @@ class KeyFetcher:
         log.info("Fetched all keys", start=time.time(), end=self.start_time)
         return keys
 
-print(KeyFetcher("ebe7e23e88d295f1ab31b3848838e4e46a1f27169e00cbc8a839a1e1c3425e12").fetch_keys())
+print(KeyFetcher("7c83af8d9941ab9b80998e63063db44756f8bec51163fd3e28ebfddff965c582").fetch_keys())
