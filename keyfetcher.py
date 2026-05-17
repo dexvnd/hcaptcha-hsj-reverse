@@ -1,4 +1,4 @@
-from dexvstuff import Logger, Wabt, JsdomRuntime
+from dexvstuff import Logger, JsdomRuntime
 from dexvstuff.jsdomruntime import require
 import requests, time, jsbeautifier
 
@@ -7,7 +7,6 @@ log = Logger()
 class KeyFetcher:
     def __init__(self, version: str) -> None:
         self.start_time = time.time()
-        self.wabt = Wabt()
         self.runtime = JsdomRuntime()
         self.runtime.runtime.HTMLCanvasElement.prototype.getContext = require('canvas').createCanvas().getContext
         self.hsj = requests.get(f"https://newassets.hcaptcha.com/c/{version}/hsj.js").text
