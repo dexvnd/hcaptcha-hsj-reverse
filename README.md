@@ -22,7 +22,7 @@ it will print out the n_key and response_decrypt_key
 
 ## files
 
-- keyfetcher.py - the main thing, downloads hsj.js and extracts the keys
+- keyfetcher.py - the keyfetcher, downloads hsj.js and extracts the keys
 - algorithm.py - has all the helper classes (encryption, hashing, encoding etc)
 
 ## requirements
