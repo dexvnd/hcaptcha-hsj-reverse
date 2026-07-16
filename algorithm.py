@@ -91,9 +91,10 @@ class Hash:
         if not isinstance(self.data, str): self.data = json.dumps(self.data, separators=(",", ":"))
 
     def crc32(self) -> int:
-        crc = zlib.crc32(self.data.encode())
-        return crc
-
+        data = json.dumps(self.data, separators=(",", ":"), ensure_ascii=False)
+        crc = zlib.crc32(data.encode())
+        return float(numpy.uint32(crc) * 2.3283064365386963e-10)
+    
     def xx64(self) -> str:
         seed = 5575352424011909552
         return str(xxhash.xxh64_intdigest(self.data, seed=seed))
